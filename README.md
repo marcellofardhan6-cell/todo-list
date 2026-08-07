@@ -1,19 +1,22 @@
 # Yapindo TODO List
 
-Aplikasi TODO List sederhana yang dibuat menggunakan Laravel. Data todo disimpan ke database SQLite sehingga setiap data yang ditambahkan, diubah, atau dihapus akan langsung tersimpan.
+Aplikasi TODO List sederhana yang dibuat menggunakan Laravel. Semua data disimpan ke database SQLite sehingga todo tetap tersimpan meskipun aplikasi ditutup.
 
 ## Fitur
 
 - Menambahkan todo baru
-- Menandai todo sebagai selesai
+- Menandai todo selesai dengan checkbox
 - Menghapus todo
+- Menampilkan jumlah todo
 - Data tersimpan di database SQLite
 
-## Requirement
+## Teknologi
 
-- PHP 8.3 atau lebih baru
-- Composer
-- Node.js dan npm
+- Laravel
+- PHP
+- SQLite
+- HTML
+- CSS
 
 ## Cara Menjalankan
 
@@ -36,7 +39,7 @@ composer install
 npm install
 ```
 
-4. Copy file `.env`
+4. Copy file environment
 
 ```bash
 cp .env.example .env
@@ -48,13 +51,15 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-6. Buat file database
+6. Buat file database SQLite
+
+Buat file:
 
 ```
 database/database.sqlite
 ```
 
-Lalu ubah `.env` menjadi:
+Lalu ubah pada file `.env`
 
 ```env
 DB_CONNECTION=sqlite
@@ -80,12 +85,11 @@ http://127.0.0.1:8000
 
 ## Cara Menggunakan
 
-- Tambahkan todo baru.
-- Klik **Complete** untuk menyelesaikan todo.
+- Ketik kegiatan pada kolom input.
+- Klik **Add Todo** untuk menambahkan todo.
+- Klik **checkbox** untuk menandai todo selesai.
 - Klik **Delete** untuk menghapus todo.
 
-## Framework
+## Database
 
-- Laravel
-- Bootstrap
-- SQLite
+Project ini menggunakan database **SQLite** dan seluruh data todo tersimpan di database melalui Laravel Eloquent.
