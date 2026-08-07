@@ -21,7 +21,7 @@ class TodoController extends Controller
         ]);
 
         Todo::create([
-            'title' => $request->string('title')->trim(),
+            'title' => trim($request->input('title')),
             'completed' => false,
         ]);
 
