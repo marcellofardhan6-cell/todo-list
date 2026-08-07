@@ -1,6 +1,6 @@
 # Yapindo TODO List
 
-Aplikasi TODO List sederhana yang dibuat menggunakan Laravel. Semua data disimpan ke database SQLite sehingga todo tetap tersimpan meskipun aplikasi ditutup.
+Aplikasi TODO List simple yang dibuat menggunakan Laravel. Semua data disimpan ke database SQLite jadi todo tetap tersimpan meskipun aplikasi ditutup
 
 ## Fitur
 
