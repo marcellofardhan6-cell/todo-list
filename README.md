@@ -92,4 +92,4 @@ http://127.0.0.1:8000
 
 ## Database
 
-Project ini menggunakan database **SQLite** dan seluruh data todo tersimpan di database melalui Laravel Eloquent.
+Project ini menggunakan database **SQLite** dan seluruh data todo tersimpan di database melalui Laravel.
